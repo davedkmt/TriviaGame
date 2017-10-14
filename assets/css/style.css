@@ -1,0 +1,54 @@
+body {
+  background-image: url("http://www.theworldandthensome.com/wp-content/uploads/2014/04/giphy-2dfvdfv.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+}
+
+button, input {
+  cursor: pointer;
+}
+
+.container {
+  background-color: yellow;
+  height: 700px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.start {
+  margin-left: 450px;
+}
+
+#page1, #answer1a, #answer1b,
+#page2, #answer2a, #answer2b,
+#page3, #answer3a, #answer3b,
+#page4, #answer4a, #answer4b,
+#page5, #answer5a, #answer5b,
+#last {
+  padding: 80px;
+  background: silver;
+  margin-left: 270px;
+  margin-right: 250px;
+  margin-top: 50px;
+  opacity: 0.5;
+  border-radius: 25px;
+}
+
+.trivia, #timer, h2 {
+  text-align: center;
+}
+
+.list {
+  text-align: center;
+  margin-right: 35px;
+}
+
+#last {
+  text-align: center;
+}
+
+input {
+  margin-left: 100px;
+}

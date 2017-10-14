@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trivial Trivia</title>
+
+  <!-- Link to jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!--
+1.Have a start screen with instruction and start button!
+2. When start button is clicked move to the next page
+3. first page shows up while hiding the first page and the timer starts countdown from 20-to 0!
+4.If the user guesses right, 1. let them know they did right 2. if not guessed right show incorect 3. if not chosen show incorect
+5....And so on till the 5th page (last page).
+6. after the the final page show 1. total correct 2. total incorrect
+7. Reset button to restart the game -->
+
+
+<body>
+
+  <!-- The first page -->
+  <div>
+  <div id="first">
+
+    <h1 class="trivia">Trivia</h1>
+    <h2>Travel Around The World</h2>
+    <br>
+    <button class="btn btn-info btn-md" id="start">Start</button>
+  </div>
+
+  <!-- Timer -->
+
+  <h1 id="timer">Time Remaining: <span id = "seconds">10 Seconds</span></h1>
+</div>
+  <!-- Question with multiple choices -->
+  <div id="page1">
+    <h1>1. In this country, people eat about a pound of rice a day and greet each other by asking, "Have you eaten?" - what country am I?</h1>
+    <br>
+    <div class="form-field">
+      <input type="radio" name="one" value="india"> A. India
+      <input type="radio" name="one" value="thailand"> B. Thailand
+      <input type="radio" name="one" value="china"> C. China
+      <input type="radio" name="one" value="japan"> D. Japan
+    </div>
+
+    <h1>2. It's shaped like a boot, and the capital, which wasn't built in a day, is nicknamed The Eternal City - what country am I?</h1>
+
+    <br>
+    <div class="form-field">
+      <input name="two" value="italy" type="radio"> A. Italy
+      <input name="two" value="greece" type="radio"> B. Greece
+      <input name="two" value="france" type="radio"> C. France
+      <input name="two" value="finland" type="radio"> D. Finland
+    </div>
+    <h1>3. This mountainous country is home to Machu Picchu, which is known as "The Lost City" of the Incas - what country am I?</h1>
+
+    <br>
+    <div class="form-field">
+      <input name="three" value="ecuador" type="radio"> A. Ecuador
+      <input name="three" value="colombia" type="radio"> B. Colombia
+      <input name="three" value="coastarica" type="radio"> C. Costa Rica
+      <input name="three" value="peru" type="radio"> D. Peru
+    </div>
+    <h1>4. For 28 years, a wall divided a city in this country from east to west, but it was torn down in 1989 - what country am I?</h1>
+
+    <br>
+    <div class="form-field">
+      <input value="china" name="four" type="radio"> A. China
+      <input value="russia" name="four" type="radio"> B. Russia
+      <input value="israel" name="four" type="radio"> C. Israel
+      <input value="germany" name="four" type="radio"> D. Germany
+    </div>
+
+    <h1>5. In this country, people answer the phone by saying, "I'm listening" - what country am I?</h1>
+
+    <br>
+    <div class="form-field">
+      <input value="china" name="five" type="radio"> A. Japan
+      <input value="china" name="five" type="radio"> B. Norway
+      <input value="china" name="five" type="radio"> C. Iceland
+      <input value="russia" name="five" type="radio"> D. Russia
+    </div>
+
+    <h1>6. Where can the world's tallest building be found?</h1>
+    <br>
+    <div class="form-field">
+      <input type="radio" name="six" value="india"> A. United States
+      <input type="radio" name="six" value="thailand"> B. Thailand
+      <input type="radio" name="six" value="china"> C. Russia
+      <input type="radio" name="six" value="japan"> D. Taiwan
+    </div>
+    <h1>7. What is the world's most populous country?</h1>
+    <br>
+    <div class="form-field">
+      <input type="radio" name="seven" value="india"> A. India
+      <input type="radio" name="seven" value="thailand"> B. Thailand
+      <input type="radio" name="seven" value="china"> C. China
+      <input type="radio" name="seven" value="japan"> D. Japan
+    </div>
+    <h1>8. What country is the world's top travel destination?</h1>
+    <br>
+    <div class="form-field">
+      <input type="radio" name="eight" value="india"> A. United States
+      <input type="radio" name="eight" value="thailand"> B. Great Britain
+      <input type="radio" name="eight" value="france"> C. France
+      <input type="radio" name="eight" value="japan"> D. Brazil
+    </div>
+    <h1>9. What country has the highest life expectancy?</h1>
+    <br>
+    <div class="form-field">
+      <input type="radio" name="nine" value="andorra"> A. Andorra
+      <input type="radio" name="nine" value="thailand"> B. Sweden
+      <input type="radio" name="nine" value="china"> C. China
+      <input type="radio" name="nine" value="japan"> D. Japan
+    </div>
+    <h1>10. What country has the highest waterfall?</h1>
+    <br>
+    <div class="form-field">
+      <input type="radio" name="ten" value="bolivia"> A. Bolivia
+      <input type="radio" name="ten" value="thailand"> B. Thailand
+      <input type="radio" name="ten" value="china"> C. Venezuela
+      <input type="radio" name="ten" value="japan"> D. South Africa
+    </div>
+
+
+
+    <br><br>
+    <button class="btn btn-info btn-md" id="final">Submit</button>
+  </div>
+
+  <!-- The last page -->
+  <div id="last">
+
+    <h1 class="grab"></h1>
+
+    <h1 id="finished">Result:</h1>
+    <br>
+
+    <h1>Correct Answers: <span id = "correct">0</span></h1>
+    <h1>Incorrect Answers: <span id = "wrong">0</span></h1>
+    <h1>Unanswered: <span id = "empty">0</span></h1>
+
+
+    <button class="btn btn-info btn-md" id="new">Restart</button>
+
+  </div>
+
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
