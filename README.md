@@ -6,3 +6,5 @@ The game ends when the time runs out. The page will reveal the number of questio
 The player is allowed to pick one answer per question.
 
 A countdown timer starts when the user clicks the start button
+
+Link to the app: https://davedkmt.github.io/TriviaGame/
